@@ -1,7 +1,7 @@
 
 public class ArrayItems {
 	
-	String[] arrItems;
+	String[] arrItems = new String[5];
 	
 	public ArrayItems(){
 		// Hard code some items

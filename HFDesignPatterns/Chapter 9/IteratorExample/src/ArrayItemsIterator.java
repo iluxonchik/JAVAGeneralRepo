@@ -15,7 +15,7 @@ public class ArrayItemsIterator implements Iterator{
 	}
 	
 	public boolean hasNext(){
-		if (position > items.length || items[position] == null){
+		if (position > (items.length - 1) || items[position] == null){
 			return false;
 		}
 		return true;
