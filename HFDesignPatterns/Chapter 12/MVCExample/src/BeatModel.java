@@ -1,4 +1,6 @@
 
+/* Beat Model is the MODEL (as the name suggests). */
+
 import javax.sound.midi.*;
 import java.util.*;
 
