@@ -20,7 +20,7 @@ public class BeatModel implements BeatModelInterface, MetaEventListener{
 	
 	public void on(){
 		sequencer.start();
-		buildTracksAndStart();
+		buildTrackAndStart();
 	}
 	
 	public void off(){
@@ -74,7 +74,7 @@ public class BeatModel implements BeatModelInterface, MetaEventListener{
 	}
 	
 	public void notifyBPMObservers(){
-		for (int i = 0; i < bpmObsevers.size(); i++){
+		for (int i = 0; i < bpmObservers.size(); i++){
 			BPMObserver observer = (BPMObserver)bpmObservers.get(i);
 			observer.updateBPM();
 		}
@@ -108,7 +108,7 @@ public class BeatModel implements BeatModelInterface, MetaEventListener{
 		track.add(makeEvent(192,9,1,0,4));
 		try {
 			sequencer.setSequence(sequence);
-		} catch (Exception e{
+		} catch (Exception e) {
 			e.printStackTrace();
 		}
 	}

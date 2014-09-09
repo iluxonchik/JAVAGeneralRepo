@@ -1,9 +1,11 @@
 
-import java.awt.*;
-import java.awt.event.*;
 import javax.swing.*;
 
 public class BeatBar extends JProgressBar implements Runnable{
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -2097068813160232333L;
 	JProgressBar progressBar;
 	Thread thread;
 	
