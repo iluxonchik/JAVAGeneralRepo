@@ -1,0 +1,13 @@
+
+public abstract class Animal {
+	
+	private final int DOG_ENERGY = 1000;
+	protected final int CAT_ENERGY = 500;
+	protected final int MOUSE_ENERGY = 50;
+	private final int BIRD_ENERGY = 20;
+	
+	
+	public void Run(){}
+		
+
+}

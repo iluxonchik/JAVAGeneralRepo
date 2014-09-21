@@ -1,0 +1,31 @@
+public class Cat extends Animal{
+	
+	private String name;
+	boolean isAlive;
+	
+	// Constructors
+	public Cat(String name){
+		this.name = name;
+		this.energy = CAT_ENERGY;
+	}
+	
+	
+	// Getters
+	public String getName(){
+		return this.name;
+	}
+	
+	// Setters
+	public void setName(String name){
+		this.name = name;
+	}
+	
+	public int getEnergy(){
+		return this.energy;
+	}
+	
+	public String toString (){
+		return ("\nName: " + this.getName() + "\nEnergy: " + this.getEnergy());
+	}
+	
+}
