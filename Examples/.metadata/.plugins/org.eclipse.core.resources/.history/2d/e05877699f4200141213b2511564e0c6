@@ -1,5 +1,5 @@
 
-public abstract class Prey implements Runnable, Sleepable{
+public class Prey implements Runnable, Sleepable{
 	
 	protected final int INIT_ENERGY = 0;
 	protected final int BONUS_ENERGY = 0;
@@ -37,6 +37,7 @@ public abstract class Prey implements Runnable, Sleepable{
 		
 	}
 
+	@Override
 	
 	
 	

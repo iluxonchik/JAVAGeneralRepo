@@ -32,7 +32,7 @@ public class AliveAnimalState implements PredatorState{
 	
 	public void sleep(){
 		System.out.println("Zzzzz...\n");
-		animal.setEnergy(animal.getEnergy() + animal.INIT_ENERGY);
+		animal.setEnergy(animal.INIT_ENERGY);
 	}
 	
 	private void performAttack(Animal animal, Prey prey, int ratio){

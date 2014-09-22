@@ -30,11 +30,6 @@ public class AliveAnimalState implements PredatorState{
 		}
 	}
 	
-	public void sleep(){
-		System.out.println("Zzzzz...\n");
-		animal.setEnergy(animal.getEnergy() + animal.INIT_ENERGY);
-	}
-	
 	private void performAttack(Animal animal, Prey prey, int ratio){
 		// A helper function. Recieves the entities involved in an attack
 		// as well as the success ratio and performs the attack.
@@ -81,6 +76,7 @@ public class AliveAnimalState implements PredatorState{
 	}
 	
 	public void attack(Cat cat){
+		// TODO
 		// Only implement the part where Dog attacks the Cat
 		if (animal instanceof Dog){
 			animal.setEnergy(animal.getEnergy() - DOG_CAT_RATIO);

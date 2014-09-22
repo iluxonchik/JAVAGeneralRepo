@@ -37,6 +37,7 @@ public abstract class Prey implements Runnable, Sleepable{
 		
 	}
 
+	@Override
 	
 	
 	

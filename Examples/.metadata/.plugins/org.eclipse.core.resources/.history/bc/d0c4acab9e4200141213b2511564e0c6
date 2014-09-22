@@ -21,6 +21,7 @@ public abstract class Animal implements PredatorState, Runnable, Sleepable{
 	
 	public abstract void attack(Object o);
 	
+	public abstract void sleep();
 	
 	// Getters
 	public String getName(){

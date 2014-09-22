@@ -1,5 +1,5 @@
 
-public abstract class Animal implements PredatorState, Runnable, Sleepable{
+public abstract class Animal implements PredatorState, Runnable{
 	
 	// Instance variables
 	protected String name;
@@ -21,6 +21,7 @@ public abstract class Animal implements PredatorState, Runnable, Sleepable{
 	
 	public abstract void attack(Object o);
 	
+	public void sleep();
 	
 	// Getters
 	public String getName(){

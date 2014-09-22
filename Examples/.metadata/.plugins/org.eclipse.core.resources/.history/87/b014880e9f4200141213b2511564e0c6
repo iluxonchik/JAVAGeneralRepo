@@ -1,13 +1,11 @@
 
-public abstract class Prey implements Runnable, Sleepable{
+public class Prey implements Runnable, Sleepable{
 	
 	protected final int INIT_ENERGY = 0;
 	protected final int BONUS_ENERGY = 0;
 	
 	public int energy = 0;
 	protected boolean isAlive = true;
-	
-	public abstract void sleep();
 	
 	public int kill(){
 		int temp = this.energy;
@@ -26,7 +24,7 @@ public abstract class Prey implements Runnable, Sleepable{
 	}
 	
 	// Setters
-	public void setEnergy(int energy){
+	public void setEnergy(int enegy){
 		this.energy = energy;
 	}
 	
@@ -37,7 +35,11 @@ public abstract class Prey implements Runnable, Sleepable{
 		
 	}
 
-	
+	@Override
+	public void sleep() {
+		// TODO Auto-generated method stub
+		
+	}
 	
 	
 }
