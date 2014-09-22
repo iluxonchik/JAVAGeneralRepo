@@ -1,36 +1,28 @@
 public class Cat extends Animal{
 	
 	// Constants
-	private final int CAT_ENERGY = 500;
-	private final int CAT_RUN_ENERGY = 25;
-
-	
-	private String name;
+	public final int INIT_ENERGY = 500;
+	public final int RUN_ENERGY = 25;
 	
 	// Constructors
 	public Cat(String name){
 		this.name = name;
-		this.energy = CAT_ENERGY;
+		this.energy = INIT_ENERGY;
+		this.AliveAnimal = new AliveAnimalState((Object)this);
+		this.DeadAnimal = new DeadAnimalState((Object)this);
 	}
 	
-	// Getters
-	public String getName(){
-		return this.name;
-	}
-	
-	// Setters
-	public void setName(String name){
-		this.name = name;
-	}
 	
 	public void run(){
 		System.out.println(this.getName() + "is running...\n");
-		
+		this.energy -= RUN_ENERGY;	
 	}
 	
-	// Overrides
-	public String toString (){
-		return ("\nName: " + this.getName() + "\nEnergy: " + this.getEnergy());
+	public void attackCat(Cat cat){
+		System.out.println("There is no way I'm attacking a fellow feline!");
 	}
+	
+	
+	
 	
 }

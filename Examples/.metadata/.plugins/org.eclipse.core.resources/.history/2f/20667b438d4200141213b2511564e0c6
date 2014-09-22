@@ -1,0 +1,16 @@
+
+public class AliveAnimal {
+	
+	Animal animal;
+	
+	public AliveAnimal(Object animal){
+		if (animal instanceof Cat)
+			this.animal = (Cat)animal;
+	}
+	
+	public void run(){
+		if (animal.isAlive()){
+			
+		}
+	}
+}

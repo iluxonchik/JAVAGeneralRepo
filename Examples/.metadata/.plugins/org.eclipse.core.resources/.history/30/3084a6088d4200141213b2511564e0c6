@@ -1,0 +1,15 @@
+
+public class AliveAnimal {
+	
+	Animal animal;
+	
+	public AliveAnimal(Object animal){
+		
+	}
+	
+	public void run(){
+		if (animal).isAlive()){
+			
+		}
+	}
+}

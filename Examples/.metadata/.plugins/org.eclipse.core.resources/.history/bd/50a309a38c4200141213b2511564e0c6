@@ -1,0 +1,12 @@
+
+public class AliveAnimal {
+	
+	Object animal;
+	
+	public AliveAnimal(Object animal){
+		if (animal instanceof Cat )
+			this.animal = (Cat)animal;
+		else if (animal instanceof Dog)
+			this.animal = (Dog)animal;
+	}
+}

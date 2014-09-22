@@ -1,0 +1,23 @@
+public class Cat extends Animal{
+	
+	// Constants
+	public final int INIT_ENERGY = 500;
+	public final int RUN_ENERGY = 25;
+	
+	// Constructors
+	public Cat(String name){
+		this.name = name;
+		this.energy = INIT_ENERGY;
+	}
+	
+	
+	public void run(){
+		System.out.println(this.getName() + "is running...\n");
+		this.energy -= RUN_ENERGY;
+		
+	}
+	
+	
+	
+	
+}

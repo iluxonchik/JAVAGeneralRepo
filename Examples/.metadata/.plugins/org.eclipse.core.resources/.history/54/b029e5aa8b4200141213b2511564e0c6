@@ -1,0 +1,4 @@
+
+public class AlivePrey implements State{
+
+}
