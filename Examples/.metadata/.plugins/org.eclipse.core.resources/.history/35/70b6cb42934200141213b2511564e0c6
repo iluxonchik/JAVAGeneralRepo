@@ -23,13 +23,15 @@ public abstract class Animal implements State{
 		throw new UnsupportedOperationException("This animal cannot attack cats.");
 	}
 	
-	public abstract void run();
-	public abstract void attack(Object o);
-	
-	public void sleep(){
-		System.out.println("Zzzzz...\n");
-		this.setEnergy(INIT_ENERGY);
+	public int getEnergy(){
+		return this.energy;
 	}
+	
+	public boolean isAlive(){
+		return this.isAlive;
+	}
+	
+	public abstract void run();
 	
 	// Getters
 	public String getName(){
@@ -46,14 +48,6 @@ public abstract class Animal implements State{
 	
 	public State getDeadState(){
 		return this.DeadAnimal;
-	}
-	
-	public int getEnergy(){
-		return this.energy;
-	}
-	
-	public boolean isAlive(){
-		return this.isAlive;
 	}
 	
 	// Setters
@@ -75,4 +69,7 @@ public abstract class Animal implements State{
 			return ("\nName: " + this.getName() + "\nEnergy: " + this.getEnergy());
 	}
 	
+	public void sleep(){
+		System.out.println("Zzzzz...\n");
+	}
 }

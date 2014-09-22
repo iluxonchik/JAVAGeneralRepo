@@ -18,7 +18,7 @@ public class Cat extends Animal{
 	}
 	
 	public void attack(Object o){
-		// TODO
+		
 	}
 	
 	public void attackCat(Cat cat){

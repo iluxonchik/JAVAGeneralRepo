@@ -14,11 +14,8 @@ public class Cat extends Animal{
 	
 	
 	public void run(){
-		state.run();
-	}
-	
-	public void attack(Object o){
-		// TODO
+		System.out.println(this.getName() + "is running...\n");
+		this.energy -= RUN_ENERGY;	
 	}
 	
 	public void attackCat(Cat cat){

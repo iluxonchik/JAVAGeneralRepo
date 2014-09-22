@@ -11,14 +11,6 @@ public class DeadAnimalState implements State{
 	}
 	
 	public void run(){
-		printDeadMessage();
-	}
-	
-	public void sleep(){
-		printDeadMessage();
-	}
-	
-	private void printDeadMessage(){
 		System.out.println("The animal is dead.\n");
 	}
 }

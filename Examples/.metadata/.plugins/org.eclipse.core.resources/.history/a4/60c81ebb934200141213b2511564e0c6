@@ -24,7 +24,6 @@ public abstract class Animal implements State{
 	}
 	
 	public abstract void run();
-	public abstract void attack(Object o);
 	
 	public void sleep(){
 		System.out.println("Zzzzz...\n");

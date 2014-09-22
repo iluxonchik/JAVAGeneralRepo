@@ -15,7 +15,7 @@ public class DeadAnimalState implements State{
 	}
 	
 	public void sleep(){
-		printDeadMessage();
+		
 	}
 	
 	private void printDeadMessage(){
