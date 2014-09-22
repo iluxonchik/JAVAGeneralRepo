@@ -1,0 +1,20 @@
+
+public class Prey {
+	
+	protected final int INIT_ENERGY = 0;
+	protected final int BONUS_ENERGY = 0;
+	
+	public int energy = 0;
+	protected boolean isAlive = true;
+	
+	// Getters
+	public int getEnergy(){
+		return this.energy;
+	}
+	
+	public void kill(){
+		this.energy = 0;
+		this.isAlive = false;
+	}
+	
+}

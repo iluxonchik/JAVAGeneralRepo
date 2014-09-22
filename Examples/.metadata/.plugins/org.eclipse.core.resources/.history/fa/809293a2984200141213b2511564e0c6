@@ -1,0 +1,16 @@
+
+public class AlivePreyState implements PreyState{
+
+	
+	// Overrides
+	public void run() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void escape() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+}

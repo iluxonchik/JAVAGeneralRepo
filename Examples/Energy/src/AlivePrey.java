@@ -1,5 +1,5 @@
 
-public class AlivePrey implements State{
+public class AlivePrey implements PreyState{
 	
 	public void run(){
 		

@@ -1,0 +1,8 @@
+
+public class Prey {
+	protected final int INIT_ENERGY = 0;
+	protected final int BONUS_ENERGY = 0;
+	
+	protected boolean isAlive = true;
+	
+}

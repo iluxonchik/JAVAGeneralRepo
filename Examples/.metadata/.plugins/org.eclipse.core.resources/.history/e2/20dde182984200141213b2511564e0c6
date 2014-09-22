@@ -1,0 +1,4 @@
+
+public class AlivePreyState implements PreyState{
+
+}

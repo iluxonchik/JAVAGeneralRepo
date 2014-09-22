@@ -1,0 +1,4 @@
+
+public class Prey {
+	protected final INIT_ENERGY = 0;
+}

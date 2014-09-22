@@ -1,29 +1,24 @@
 
-public abstract class Animal implements State{
+public abstract class Animal implements PredatorState, Runnable{
 	
 	// Instance variables
 	protected String name;
 	protected int energy;
 	protected boolean isAlive;
-	State state;
+	PredatorState state;
 	
 	// States
-	State AliveAnimal;
-	State DeadAnimal;
+	PredatorState AliveAnimal;
+	PredatorState DeadAnimal;
 
 	public final int INIT_ENERGY = 0;
 	public final int RUN_ENERGY = 0;
-	
-	protected final int DOG_ENERGY = 1000;
-	protected final int MOUSE_ENERGY = 50;
-	protected final int BIRD_ENERGY = 20;
 	
 	public void attackCat(Cat cat){
 		// Default implementation
 		throw new UnsupportedOperationException("This animal cannot attack cats.");
 	}
 	
-	public abstract void run();
 	public abstract void attack(Object o);
 	
 	public void sleep(){
@@ -40,11 +35,11 @@ public abstract class Animal implements State{
 		return this.RUN_ENERGY;
 	}
 	
-	public State getAliveState(){
+	public PredatorState getAliveState(){
 		return this.AliveAnimal;
 	}
 	
-	public State getDeadState(){
+	public PredatorState getDeadState(){
 		return this.DeadAnimal;
 	}
 	
@@ -65,7 +60,7 @@ public abstract class Animal implements State{
 		this.name = name;
 	}
 	
-	public void setState(State state){
+	public void setState(PredatorState state){
 		this.state = state;
 	}
 	

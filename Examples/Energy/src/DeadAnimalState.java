@@ -1,5 +1,5 @@
 
-public class DeadAnimalState implements State{
+public class DeadAnimalState implements PredatorState{
 
 	Animal animal;
 	
@@ -20,5 +20,11 @@ public class DeadAnimalState implements State{
 	
 	private void printDeadMessage(){
 		System.out.println("The animal is dead.\n");
+	}
+
+	@Override
+	public void attack(Object o) {
+		// TODO Auto-generated method stub
+		
 	}
 }
