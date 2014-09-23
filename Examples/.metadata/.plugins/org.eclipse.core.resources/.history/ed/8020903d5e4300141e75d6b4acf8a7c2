@@ -1,0 +1,19 @@
+
+public class Dog extends Animal{
+
+	@Override
+	public void run() {
+		state.run();
+	}
+
+	@Override
+	public void sleep() {
+		state.run();		
+	}
+
+	@Override
+	public void attack(Prey p) {
+		state.run();
+	}
+
+}

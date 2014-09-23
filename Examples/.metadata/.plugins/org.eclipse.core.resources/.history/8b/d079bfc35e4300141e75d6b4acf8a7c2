@@ -1,0 +1,23 @@
+
+public class Bird extends Prey{
+
+	public Bird(){
+		this.energy = INIT_ENERGY;
+		AlivePrey = new AlivePreyState(this);
+		DeadPrey = new DeadPreyState(this);
+		if (this.getEnergy() >= 0){
+			this.setState(AlivePrey);
+		}
+	}
+
+	@Override
+	public void run() {
+		state.run();
+	}
+
+	@Override
+	public void sleep() {
+		state.sleep();		
+	}
+
+}

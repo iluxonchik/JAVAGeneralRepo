@@ -1,0 +1,28 @@
+
+public class DeadPreyState implements PreyState{
+
+	Prey prey; // reference to the object whose behaviour is wrapped
+	
+	public DeadPreyState(Prey prey){
+		this.prey = prey;
+	}
+	
+	@Override
+	public void run() {
+		printDeadMessage();
+	}
+
+	@Override
+	public void escape() {
+		printDeadMessage();		
+	}
+
+	@Override
+	public void sleep() {
+		printDeadMessage();
+	}
+
+	public void printDeadMessage(){
+		System.out.println("This prey is dead.\n");
+	}
+}

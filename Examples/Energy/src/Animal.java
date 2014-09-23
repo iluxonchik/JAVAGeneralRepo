@@ -5,7 +5,7 @@ public abstract class Animal implements PredatorState, Runnable, Sleepable{
 	protected String name;
 	protected int energy;
 	protected boolean isAlive;
-	PredatorState state;
+	protected PredatorState state;
 	
 	// States
 	PredatorState AliveAnimal;
@@ -13,14 +13,15 @@ public abstract class Animal implements PredatorState, Runnable, Sleepable{
 
 	public final int INIT_ENERGY = 0;
 	public final int RUN_ENERGY = 0;
+
+	
+	public abstract void attack(Prey p);
+	
 	
 	public void attackCat(Cat cat){
 		// Default implementation
 		throw new UnsupportedOperationException("This animal cannot attack cats.");
 	}
-	
-	public abstract void attack(Object o);
-	
 	
 	// Getters
 	public String getName(){

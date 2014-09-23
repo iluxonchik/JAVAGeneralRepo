@@ -36,7 +36,7 @@ public class AliveAnimalState implements PredatorState{
 	}
 	
 	private void performAttack(Animal animal, Prey prey, int ratio){
-		// A helper function. Recieves the entities involved in an attack
+		// A helper function. Receives the entities involved in an attack
 		// as well as the success ratio and performs the attack.
 		Random rand = new Random();
 		

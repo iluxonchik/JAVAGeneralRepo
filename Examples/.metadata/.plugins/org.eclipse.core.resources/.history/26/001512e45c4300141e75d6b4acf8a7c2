@@ -1,0 +1,25 @@
+
+public class DeadPreyState implements PreyState{
+
+	@Override
+	public void run() {
+		
+		
+	}
+
+	@Override
+	public void escape() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void sleep() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void printDeadMessage(){
+		System.out.println("This prey is dead.\n")
+	}
+}

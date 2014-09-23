@@ -1,0 +1,28 @@
+
+public class AlivePreyState implements PreyState{
+	
+	Prey prey;
+	
+	public AlivePreyState(Prey prey){
+		this.prey = prey;
+	}
+	
+	// Overrides
+	public void run() {
+		prey.setEnergy(prey.getEnergy() - prey.RUN_ENERGY);
+		if (prey.getEnergy() < 0){
+			prey.setState(prey.getAliveState());
+		}
+		else{
+			// Prey died
+			prey.setState(prey.getDeadState());
+		
+		}
+	}
+
+	public void escape() {
+		// TODO Auto-generated method stub
+		prey.setEnergy(prey.getEnergy() + prey.BONUS_ENERGY);
+	}
+	
+}

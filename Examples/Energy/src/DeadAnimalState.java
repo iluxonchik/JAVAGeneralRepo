@@ -18,13 +18,14 @@ public class DeadAnimalState implements PredatorState{
 		printDeadMessage();
 	}
 	
+	@Override
+	public void attack(Prey prey) {
+		// TODO Auto-generated method stub
+		printDeadMessage();
+	}
+	
 	private void printDeadMessage(){
 		System.out.println("The animal is dead.\n");
 	}
 
-	@Override
-	public void attack(Object o) {
-		// TODO Auto-generated method stub
-		
-	}
 }

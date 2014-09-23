@@ -1,0 +1,49 @@
+
+public abstract class Prey implements Runnable, Sleepable{
+	
+	protected final int INIT_ENERGY = 100; 
+	protected final int BONUS_ENERGY = 5;
+	
+	protected int energy;
+	protected boolean isAlive;
+	
+	public Prey(){
+		this.energy = 0;
+		this.isAlive = true;
+	}
+	
+	
+	public abstract void sleep();
+	
+	public int kill(){
+		int temp = this.energy;
+		this.energy = 0;
+		this.isAlive = false;
+		return temp;
+	}
+	
+	public void escape(){
+		this.energy += BONUS_ENERGY;
+	}
+	
+	// Getters
+	public int getEnergy(){
+		return this.energy;
+	}
+	
+	// Setters
+	public void setEnergy(int energy){
+		this.energy = energy;
+	}
+	
+
+	// Overrides
+	public void run() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	
+	
+	
+}
