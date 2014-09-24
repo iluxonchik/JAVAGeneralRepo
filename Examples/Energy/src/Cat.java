@@ -35,6 +35,23 @@ public class Cat extends Animal{
 	public void sleep() {
 		state.sleep();
 	}
+
+
+	@Override
+	public void attack(Cat cat) {
+		state.attack(cat);
+		
+	}
+	
+	@Override
+	public int getRunEnergy(){
+		return this.RUN_ENERGY;
+	}
+	
+	@Override
+	public int getInitEnergy(){
+		return this.INIT_ENERGY;
+	}
 	
 	
 	

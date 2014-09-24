@@ -1,6 +1,9 @@
 
 public class Bird extends Prey{
 
+	protected final int INIT_ENERGY = 20; 
+	protected final int RUN_ENERGY = 5;
+	
 	public Bird(){
 		this.energy = INIT_ENERGY;
 		AlivePrey = new AlivePreyState(this);
@@ -17,6 +20,11 @@ public class Bird extends Prey{
 	@Override
 	public void sleep() {
 		state.sleep();		
+	}
+
+	@Override
+	public String toString() {
+		return ("Bird ifo | Energy = " + this.getEnergy());
 	}
 
 }

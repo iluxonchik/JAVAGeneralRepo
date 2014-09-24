@@ -11,8 +11,8 @@ public abstract class Animal implements PredatorState, Runnable, Sleepable{
 	PredatorState AliveAnimal;
 	PredatorState DeadAnimal;
 
-	public final int INIT_ENERGY = 0;
-	public final int RUN_ENERGY = 0;
+	private final int INIT_ENERGY = 0;
+	private final int RUN_ENERGY = 55;
 
 	
 	public abstract void attack(Prey p);
@@ -30,6 +30,10 @@ public abstract class Animal implements PredatorState, Runnable, Sleepable{
 	
 	public int getRunEnergy(){
 		return this.RUN_ENERGY;
+	}
+	
+	public int getInitEnergy(){
+		return this.INIT_ENERGY;
 	}
 	
 	public PredatorState getAliveState(){

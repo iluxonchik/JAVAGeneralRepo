@@ -24,8 +24,15 @@ public class DeadAnimalState implements PredatorState{
 		printDeadMessage();
 	}
 	
+	@Override
+	public void attack(Cat cat) {
+		printDeadMessage();		
+	}
+	
 	private void printDeadMessage(){
 		System.out.println("The animal is dead.\n");
 	}
+
+
 
 }

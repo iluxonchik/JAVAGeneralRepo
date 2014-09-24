@@ -19,9 +19,9 @@ public class AliveAnimalState implements PredatorState{
 	}
 	
 	public void run(){
-		if ((animal.getEnergy() - animal.RUN_ENERGY) >= 0){
-			System.out.println(animal.getName() + "is running! He just spent " + animal.getRunEnergy() + "energy.");
-			animal.setEnergy(animal.getEnergy() - animal.RUN_ENERGY);
+		if ((animal.getEnergy() - animal.getRunEnergy()) >= 0){
+			System.out.println(animal.getName() + " is running! He just spent " + animal.getRunEnergy() + " energy.");
+			animal.setEnergy(animal.getEnergy() - animal.getRunEnergy());
 		}
 		else{
 			// Animal died
@@ -32,7 +32,7 @@ public class AliveAnimalState implements PredatorState{
 	
 	public void sleep(){
 		System.out.println("Zzzzz...\n");
-		animal.setEnergy(animal.getEnergy() + animal.INIT_ENERGY);
+		animal.setEnergy(animal.getEnergy() + animal.getInitEnergy());
 	}
 	
 	private void performAttack(Animal animal, Prey prey, int ratio){

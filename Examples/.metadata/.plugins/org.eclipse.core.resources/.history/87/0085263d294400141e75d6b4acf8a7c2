@@ -1,0 +1,22 @@
+
+public class Main {
+	
+	public static void main(String[] args){
+		
+		Dog d1 = new Dog("Piloto");
+		Dog d2 = new Dog("Átila");
+ 
+		Cat c1 = new Cat("Tareco");
+		Cat c2 = new Cat("Pantufa");
+		Cat c3 = new Cat("Kitty");
+ 
+		Bird[] birds = new Bird[20];
+		for (int ix = 0; ix < birds.length; ix++)
+			birds[ix] = new Bird();
+ 
+		Mouse[] mice = new Mouse[50];
+		for (int ix = 0; ix < mice.length; ix++)
+			mice[ix] = new Mouse();
+		
+	}
+}

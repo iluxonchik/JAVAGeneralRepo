@@ -49,6 +49,8 @@ public abstract class Prey implements PreyState, Runnable, Sleepable{
 		this.state = state;
 	}
 	
+	public abstract String toString();
+	
 	
 	
 }

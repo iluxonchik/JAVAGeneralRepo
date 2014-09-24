@@ -1,0 +1,39 @@
+
+public class Dog extends Animal {
+	
+	private int INIT_ENERGY = 1000;
+	private int RUN_ENERGY = 50;
+	
+	
+	public Dog(String name){
+		INIT_ENERGY = 1000;
+		RUN_ENERGY = 50;
+		this.name = name;
+		AliveAnimal = new AliveAnimalState((Object)this);
+		DeadAnimal = new DeadAnimalState((Object)this);
+		this.setEnergy(INIT_ENERGY);
+		this.setState(AliveAnimal); // make dog alive
+	}
+	
+	@Override
+	public void run() {
+		state.run();
+	}
+
+	@Override
+	public void sleep() {
+		state.sleep();		
+	}
+
+	@Override
+	public void attack(Prey p) {
+		state.attack(p);
+	}
+	
+	
+	public void attack(Cat cat){
+		state.attack(cat);
+	}
+	
+
+}
