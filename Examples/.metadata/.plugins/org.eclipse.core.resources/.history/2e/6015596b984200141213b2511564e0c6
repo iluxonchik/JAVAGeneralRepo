@@ -1,4 +1,0 @@
-
-public interface PreyState {
-	public void run();
-}

@@ -1,5 +1,0 @@
-
-public interface PredatorState {
-	public void run();
-	public void attack(Object o);
-}

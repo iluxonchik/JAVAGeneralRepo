@@ -1,9 +1,0 @@
-
-public class DeadAnimalState implements State{
-
-	public void run(){
-		System.out.println("The animal is dead.\n");
-	}
-	
-	public DeadAnimalState(Object State)
-}
